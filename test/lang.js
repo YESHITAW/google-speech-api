@@ -6,10 +6,10 @@ var lang = new Lang();
 
 describe('Lang', function() {
   describe('#getLanguages()', function() {
-    it('should return pl-PL and en-US languages', function() {
+    it('should return am-ET and en-US languages', function() {
       var languages = lang.getLanguages();
       languages.length.should.not.be.below(2);
-      languages.should.containEql('pl-PL');
+      languages.should.containEql('am-ET');
       languages.should.containEql('en-US');
     });
   });
